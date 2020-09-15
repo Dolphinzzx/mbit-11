@@ -7,7 +7,7 @@ load dependency
 
 
 //% color="#006400" weight=20 icon="\uf047"
-namespace mbit_Robot {
+namespace mbit_car {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
@@ -290,6 +290,8 @@ namespace mbit_Robot {
             }
         }
     }
+	
+	/*
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
     //% weight=100
     //% blockGap=10
@@ -484,7 +486,7 @@ namespace mbit_Robot {
         return temp;
 
     }
-	/*
+
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
