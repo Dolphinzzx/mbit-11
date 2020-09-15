@@ -149,12 +149,8 @@ namespace mbit_car {
     function Car_spinright(speed1: number, speed2: number) {
 		MotorRun(enMotors.M1, speed1);
         MotorRun(enMotors.M2, -speed2);
-    }*/
-
-    /**
-     * *****************************************************************
-     * @param index
-     */
+    }
+	*/
 	 
 	//% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
