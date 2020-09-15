@@ -6,7 +6,7 @@ load dependency
 */
 
 
-//% color="#006400" weight=20 icon="\uf1b9"
+//% color="#006400" weight=20 icon="\uf047"
 namespace mbit_Robot {
 
     const PCA9685_ADD = 0x41
