@@ -742,7 +742,7 @@ namespace mbit_Robot {
     }
 	
 	
-	/*
+	
 	//% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
     //% weight=98
@@ -896,7 +896,7 @@ namespace mbit_Robot {
         }
         return temp;
 
-    }*/
+    }
     //% blockId=mbit_CarCtrl block="CarCtrl|%index"
     //% weight=93
     //% blockGap=10
