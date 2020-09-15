@@ -654,6 +654,7 @@ namespace mbit_Robot {
      * *****************************************************************
      * @param index
      */
+	 /*
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
     //% weight=101
     //% blockGap=10
@@ -735,7 +736,7 @@ namespace mbit_Robot {
         setPwm(1, 0, G);
         setPwm(2, 0, B);
 
-    }
+    }*/
 
     //% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
@@ -921,7 +922,7 @@ namespace mbit_Robot {
             case CarState.Car_SpinRight: Car_spinright(255, 255); break;
         }
     }
-	/*
+	
     //% blockId=mbit_CarCtrlSpeed block="CarCtrlSpeed|%index|speed %speed"
     //% weight=92
     //% blockGap=10
@@ -956,7 +957,7 @@ namespace mbit_Robot {
             case CarState.Car_SpinRight: Car_spinright(speed1, speed2); break;
         }
     }
-	*/
+	
 
     function MotorRun(index: enMotors, speed: number): void {
         if (!initialized) {
