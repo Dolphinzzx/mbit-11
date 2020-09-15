@@ -51,83 +51,7 @@ namespace mbit_car {
         Yellow,
 
     }
-    export enum enMusic {
-
-        dadadum = 0,
-        entertainer,
-        prelude,
-        ode,
-        nyan,
-        ringtone,
-        funk,
-        blues,
-
-        birthday,
-        wedding,
-        funereal,
-        punchline,
-        baddy,
-        chase,
-        ba_ding,
-        wawawawaa,
-        jump_up,
-        jump_down,
-        power_up,
-        power_down
-    }
-    export enum enPos {
-
-        //% blockId="LeftState" block="left state"
-        LeftState = 0,
-        //% blockId="RightState" block="right state"
-        RightState = 1
-    }
-
-    export enum enLineState {
-        //% blockId="White" block="white"
-        White = 0,
-        //% blockId="Black" block="black"
-        Black = 1
-
-    }
-    
-    export enum enAvoidState {
-        //% blockId="OBSTACLE" block="with obstacles"
-        OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="without obstacles"
-        NOOBSTACLE = 1
-
-    }
-
-    
-    export enum enServo {
-        
-        S1 = 1,
-        S2,
-        S3
-    }
-	
-	export enum enMotors {
-        M1 = 12,
-        M2 = 14
-    }
-    export enum CarState {
-        //% blockId="Car_Run" block="forward"
-        Car_Run = 1,
-        //% blockId="Car_Back" block="back"
-        Car_Back = 2,
-        //% blockId="Car_Left" block="turn left"
-        Car_Left = 3,
-        //% blockId="Car_Right" block="turn right"
-        Car_Right = 4,
-        //% blockId="Car_Stop" block="stop"
-        Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="rotate left"
-        Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="rotate right"
-        Car_SpinRight = 7
-    }
-
+   
     function i2cwrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
         buf[0] = reg
@@ -183,7 +107,7 @@ namespace mbit_car {
         buf[4] = (off >> 8) & 0xff;
         pins.i2cWriteBuffer(PCA9685_ADD, buf);
     }
-
+	/*
 	function stopMotor(index: number) {
         setPwm(index, 0, 0);
         setPwm(index + 1, 0, 0);
@@ -225,7 +149,7 @@ namespace mbit_car {
     function Car_spinright(speed1: number, speed2: number) {
 		MotorRun(enMotors.M1, speed1);
         MotorRun(enMotors.M2, -speed2);
-    }
+    }*/
 
     /**
      * *****************************************************************
