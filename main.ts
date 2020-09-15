@@ -736,7 +736,7 @@ namespace mbit_Robot {
         setPwm(1, 0, G);
         setPwm(2, 0, B);
 
-    }*/
+    }
 
     //% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
     //% weight=99
@@ -750,7 +750,8 @@ namespace mbit_Robot {
         }
         return yahStrip;  
     }
-
+	*/
+	
 	/*
 	//% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
     //% color="#006400"
