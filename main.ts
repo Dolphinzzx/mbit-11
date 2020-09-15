@@ -388,7 +388,7 @@ namespace mbit_Music {
     }
 
 }
-
+*/
 
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace mbit_Motor {
@@ -417,7 +417,7 @@ namespace mbit_Motor {
 
     }
 
-} */
+} 
 
 //% color="#006400" weight=20 icon="\uf1b9"
 namespace mbit_Robot {
@@ -748,7 +748,7 @@ namespace mbit_Robot {
     //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Ultrasonic_Car(): number {
+    export function Ultrasonic_Car(): number {d42ddb4fc9747c0a71f77536a0a39b3b3169c48a
 
         // send pulse
         let list:Array<number> = [0, 0, 0, 0, 0];
