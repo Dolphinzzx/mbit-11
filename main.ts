@@ -156,6 +156,20 @@ namespace mbit_car {
      * @param index
      */
 	 
+	//% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
+    //% weight=99
+    //% blockGap=10
+    //% color="#C814B8"
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function RGB_Car_Program(): neopixel.Strip {
+         
+        if (!yahStrip) {
+            yahStrip = neopixel.create(DigitalPin.P16, 3, NeoPixelMode.RGB);
+        }
+        return yahStrip;  
+    }
+	 
+	/*
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
     //% weight=101
     //% blockGap=10
@@ -215,7 +229,8 @@ namespace mbit_car {
         }
     }
 	
-	/*
+	
+	
     //% blockId=mbit_RGB_Car_Big block="RGB_Car_Big|value1 %value1|value2 %value2|value3 %value3"
     //% weight=100
     //% blockGap=10
@@ -240,19 +255,9 @@ namespace mbit_car {
         setPwm(2, 0, B);
 
     }
+	
 
-    //% blockId=mbit_RGB_Car_Program block="RGB_Car_Program"
-    //% weight=99
-    //% blockGap=10
-    //% color="#C814B8"
-    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function RGB_Car_Program(): neopixel.Strip {
-         
-        if (!yahStrip) {
-            yahStrip = neopixel.create(DigitalPin.P16, 3, NeoPixelMode.RGB);
-        }
-        return yahStrip;  
-    }
+
 	
 	
 	
