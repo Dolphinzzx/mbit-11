@@ -6,7 +6,7 @@ load dependency
 */
 
 
-
+/*
 //% color="#C814B8" weight=25 icon="\uf1d4"
 namespace mbit_Display {
     
@@ -427,7 +427,7 @@ namespace mbit_Motor {
 
     }
 
-}
+} */
 
 //% color="#006400" weight=20 icon="\uf1b9"
 namespace mbit_Robot {
@@ -654,7 +654,7 @@ namespace mbit_Robot {
      * *****************************************************************
      * @param index
      */
-	 /*
+	 
     //% blockId=mbit_RGB_Car_Big2 block="RGB_Car_Big2|value %value"
     //% weight=101
     //% blockGap=10
@@ -750,7 +750,7 @@ namespace mbit_Robot {
         }
         return yahStrip;  
     }
-	*/
+	
 	
 	/*
 	//% blockId=mbit_ultrasonic_car block="ultrasonic return distance(cm)"
