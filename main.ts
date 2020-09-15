@@ -335,7 +335,7 @@ namespace mbit_Robot {
     //% weight=98
     //% blockGap=10
     //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
-    export function Ultrasonic_Car(): number {d42ddb4fc9747c0a71f77536a0a39b3b3169c48a
+    export function Ultrasonic_Car(): number {
 
         // send pulse
         let list:Array<number> = [0, 0, 0, 0, 0];
