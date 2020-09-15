@@ -1071,20 +1071,20 @@ namespace mbit_Robot {
 
         if (a > 13) {
             if (speed >= 0) {
-                setPwm(a, 0, speed);
-                setPwm(b, 0, 0);
-            } else {
-                setPwm(a, 0, 0);
-                setPwm(b, 0, -speed);
-            }
-        }
-        else {
-            if (speed >= 0) {
                 setPwm(b, 0, speed);
                 setPwm(a, 0, 0);
             } else {
                 setPwm(b, 0, 0);
                 setPwm(a, 0, -speed);
+            }
+        }
+        else {
+            if (speed >= 0) {
+                setPwm(a, 0, speed);
+                setPwm(b, 0, 0);
+            } else {
+                setPwm(a, 0, 0);
+                setPwm(b, 0, -speed);
             }
         }
     }
