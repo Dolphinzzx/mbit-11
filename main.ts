@@ -6,7 +6,7 @@ load dependency
 */
 
 
-/*
+#if 0
 //% color="#C814B8" weight=25 icon="\uf1d4"
 namespace mbit_Display {
     
@@ -388,7 +388,7 @@ namespace mbit_Music {
     }
 
 }
-*/
+
 
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace mbit_Motor {
@@ -418,6 +418,7 @@ namespace mbit_Motor {
     }
 
 } 
+#endif
 
 //% color="#006400" weight=20 icon="\uf1b9"
 namespace mbit_Robot {
