@@ -462,7 +462,7 @@ namespace mbit_car {
             case CarState.Car_SpinRight: Car_spinright(speed1, speed2); break;
         }
     }
-	*/
+	
 
     function MotorRun(index: enMotors, speed: number): void {
         if (!initialized) {
@@ -497,5 +497,5 @@ namespace mbit_car {
                 setPwm(b, 0, -speed);
             }
         }
-    }
+    }*/
 }
