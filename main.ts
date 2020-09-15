@@ -618,18 +618,18 @@ namespace mbit_Robot {
     }
 
     function Car_back(speed1: number, speed2: number) {
-		MotorRun(enMotors.M1, speed1);
-        MotorRun(enMotors.M2, speed2);
+		MotorRun(enMotors.M1, -speed1);
+        MotorRun(enMotors.M2, -speed2);
     }
 
     function Car_left(speed1: number, speed2: number) {
-		MotorRun(enMotors.M1, speed1);
+		MotorRun(enMotors.M1, 0);
         MotorRun(enMotors.M2, speed2);
     }
 
     function Car_right(speed1: number, speed2: number) {
 		MotorRun(enMotors.M1, speed1);
-        MotorRun(enMotors.M2, speed2);
+        MotorRun(enMotors.M2, 0);
     }
 
     function Car_stop() {
@@ -641,13 +641,13 @@ namespace mbit_Robot {
     }
 
     function Car_spinleft(speed1: number, speed2: number) {
-		MotorRun(enMotors.M1, speed1);
+		MotorRun(enMotors.M1, -speed1);
         MotorRun(enMotors.M2, speed2);
     } 
 
     function Car_spinright(speed1: number, speed2: number) {
 		MotorRun(enMotors.M1, speed1);
-        MotorRun(enMotors.M2, speed2);
+        MotorRun(enMotors.M2, -speed2);
     }
 
     /**
